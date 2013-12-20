@@ -1,0 +1,19 @@
+// 3 lines required to make harry_potter
+var harry_potter = new Object();
+harry_potter.pages = 350;
+harry_potter.author = "J.K. Rowling";
+
+var the_hobbit = new Object();
+the_hobbit.pages = 320;
+the_hobbit.author = "J.R.R. Tolkien";
+
+// A custom constructor for book
+function Book (pages, author) {
+    this.pages = pages;
+    this.author = author;
+}
+
+// Use our new constructor to make the_hobbit in one line
+var the_hobbit = new Book(pages, author);
+
+// Can someone tell me what I'm doing wroong to use the constructor to create "the_hobbit" in one line of code?
